@@ -10,7 +10,7 @@ services:
     volumes:
       - ./event_scheduler/event_scheduler:/app
     environment:
-      - NODE_ENV=development 
+      - PYTHONUNBUFFERED=1
 
   frontend:
     build:
