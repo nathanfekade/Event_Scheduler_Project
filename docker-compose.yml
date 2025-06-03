@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./event_scheduler
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./event_scheduler/event_scheduler:/app
+    environment:
+      - NODE_ENV=development 
+
+  frontend:
+    build:
+      context: ./event_scheduler_frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./event_scheduler_frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development  
+      - CHOKIDAR_USEPOLLING=true
