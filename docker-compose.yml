@@ -3,7 +3,7 @@ version: '3.8'
 services:
   backend:
     build:
-      context: ./event_scheduler
+      context: ./event_scheduler/event_scheduler/
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
