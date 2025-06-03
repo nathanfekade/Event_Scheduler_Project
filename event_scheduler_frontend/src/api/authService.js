@@ -7,6 +7,6 @@ export default {
     },
 
     signup(userData) {
-        return axios.post('/signup/', userData);
+        return axios.post('/api/signup/', userData);
     }
 };
