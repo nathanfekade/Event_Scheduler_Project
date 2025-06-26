@@ -1,6 +1,6 @@
 # Event Scheduler Project
 
-This is a calendar project built with Django restframework and vue 3. The project lets an authenticated user create, view, edit, and delete both one-off and recurring calendar events—even tricky patterns like.
+This is a calendar project built with Django restframework and vue 3. The project lets an authenticated user create, view, edit, and delete both one-off and recurring calendar events—even tricky patterns.
 
 # Setup Instructions
 
